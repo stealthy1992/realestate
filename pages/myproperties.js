@@ -31,7 +31,7 @@ const MyProperties = () => {
   return (
    <Box>
       <Flex flexWrap="wrap" paddingTop="4">
-        {/* {properties.map((property) => <Property property={property} key={property.id} isMyProperties/>)} */}
+        {properties.map((property) => <Property property={property} key={property.id} isMyProperties/>)}
         {properties.map((property) => (
           <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
           <Link href={`/property/${property.externalID}`} passHref>
